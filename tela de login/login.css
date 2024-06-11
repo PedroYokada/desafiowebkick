@@ -1,0 +1,88 @@
+body {
+  background-color: #38b000;
+}
+
+.svg-xbox {
+  filter: brightness(0) invert(1);
+  height: 50px;
+  width: 70px;
+  margin-top: 20px;
+}
+
+.divprincipal {
+  height: 110px;
+  width: 1850px;
+  background-color: #4c4c4c;
+}
+
+.faixaprincipal {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 64px;
+  color: white;
+}
+
+.divfooter {
+  font: 16px Segoe UI;
+  height: auto;
+  text-align: center;
+  color: white;
+  background-color: #008000;
+  margin-top: 220px;
+}
+
+.divtitulologin h1 {
+  color: white;
+  font: bold 32px Verdana;
+  text-align: center;
+}
+
+.formulario {
+  background-color: #4c4c4c;
+  border-radius: 10px;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+
+
+.formulario input {
+  border-radius: 10px;
+  height: 30px;
+  width: 300px;
+  font: 20px Segoe UI;
+  margin-left: 18%;
+}
+
+.formulario button {
+  background-color: #38b000;
+  font: bold 16px Segoe UI;
+  color: white;
+  margin-left: 18%;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.formulario .paragrafo-esqueceusenha {
+  padding-top: 1%;
+  margin-left: 20%;
+  font: bold 16px Segoe UI;
+  color:white;
+  margin-left: 40%;
+}
+
+.formulario  .div-email {
+  margin-top: 10%;
+}
+
+.formulario .labelemail, .labelsenha{
+  color:white;
+  margin-left: 10%;
+  font: bold 16px Segoe UI;
+}
