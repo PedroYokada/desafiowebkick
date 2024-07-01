@@ -1,47 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="login.css" />
     <title>XBOX</title>
+   
   </head>
+
   <body>
     <div class="divprincipal">
       <header class="faixaprincipal">
-        <!-- <img src="icons8-xbox.svg" class="svg-xbox"/>  -->
-        <img src="icons8-xbox.svg" class="svg-xbox" />
-        XBOX - A CASA DOS GAMES
+        <img src="icons8-xbox.svg" class="xbox" />
+        <h1>XBOX - POWER YOUR DREAMS</h1>
       </header>
     </div>
 
     <br />
 
     <div class="divtitulologin">
-      <h1>Tela de login</h1>
+      <h1>TELA DE LOGIN</h1>
     </div>
     <br />
 
-    <form class="formulario" style="outline: none">
-      <div class="div-email">
-        <label class="labelemail">EMAIL:</label>
-        <input type="email" name="email" id="email" />
-      </div>
-
-      <div>
-        <label class="labelsenha">SENHA:</label>
-        <input type="password" id="senha" name="senha" />
-      </div>
-
-      <div class="paragrafo-esqueceusenha">
-        <a href="#">Esqueceu a senha?</a>
-      </div>
-
-      <div>
-        <button>ENTRAR</button>
-        <button>CRIAR CONTA</button>
-      </div>
-    </form>
+    <div class="div-formulario">
+      <form style="outline: none" id="formulario">
+        <div class="container-formulario">
+          <label class="label-formulario">NOME/EMAIL</label> <input
+            type="text"
+            class="caixatexto"
+            id="nome"
+            name="nome"
+            required
+          />
+         
+        </div>
+        <div class="container-formulario">
+          <label class="label-formulario">SENHA</label>
+          <input
+            type="text"
+            class="caixatexto"
+            id="sobrenome"
+            name="sobrenome"
+            required
+          />
+        </div>
+      
+        <div class="container-formulario">
+          <button type="submit" class="formulario">LOGAR</button>
+        </div>
+        <div class="container-formulario">
+          <button type="submit" class="formulario">
+            CADASTRAR
+          </button>
+        </div>
+      </form>
+    </div>
 
     <div class="divfooter">
       <footer>
