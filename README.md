@@ -15,4 +15,7 @@ a tela de escolha dos jogos e sobre-nós, não foi fácil chegar até aqui, mas 
 
 este projeto antes de se iniciar o desenvolvimento foi prototipado no FIGMA, segue o link do repositório: https://github.com/PedroYokada/projetowebxboxkick
 
+-01/07
+
+Na atualização do dia 01/07, fiz alterações na tela de login, na tela de assinatura e na tela sobre nós do Xbox.
 </p>
