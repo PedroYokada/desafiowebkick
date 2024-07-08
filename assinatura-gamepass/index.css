@@ -200,6 +200,7 @@ header h1 {
   color: white;
   border-radius: 10px;
   margin-right: 80px;
+  
 }
 
 .divfooter {
@@ -212,6 +213,13 @@ header h1 {
   padding: 10px;
   border-radius: 5px;
   width: 100%;
+}
+
+.div-assinar input:hover,
+.div-assinar2 input:hover,
+.div-assinar3 input:hover {
+  background-color: crimson;
+  cursor: pointer;
 }
 
 @media (max-width: 480px) {
@@ -231,7 +239,6 @@ header h1 {
   .divfooter {
     width: 100%;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -281,19 +288,19 @@ header h1 {
 @media (max-width: 1280px) {
   .div-pai {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    margin-top: 50px; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
     width: 100%;
     height: auto;
   }
   .div-assinatura-principal1,
   .div-assinatura-principal2 {
-    margin: 20px 10px; 
+    margin: 20px 10px;
     padding: 10px;
   }
   .div-assinatura-principal3 {
-    margin: 10px 10px; 
+    margin: 10px 10px;
   }
   .divfooter {
     width: 100%;
@@ -304,29 +311,22 @@ header h1 {
 @media (max-width: 1440px) {
   .div-pai {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    margin-top: 50px; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
     width: 100%;
     height: auto;
   }
   .div-assinatura-principal1,
   .div-assinatura-principal2 {
-    margin: 20px 10px; 
+    margin: 20px 10px;
     padding: 10px;
   }
   .div-assinatura-principal3 {
-    margin: 10px; 
+    margin: 10px;
   }
   .divfooter {
     width: 100%;
     margin-top: 20px;
   }
 }
-
-
-
-
-
-
-

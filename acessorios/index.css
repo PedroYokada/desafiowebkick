@@ -1,0 +1,217 @@
+body {
+  background-color: #4c4c4c;
+}
+
+/* Estilos para o cabeçalho e rodapé */
+.div-header,
+.divfooter {
+  background-color: #38b000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.xbox,
+.voltar {
+  width: 80px;
+  height: 80px;
+  filter: brightness(1) invert(0);
+  margin: 10px;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+/* Contêiner pai para Xbox Series X */
+.xbox-seriesX-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilo do container de conteúdo para Xbox Series X */
+.container-conteudo-x {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+  height: 40%;
+  margin-top: 0;
+}
+
+/* Estilo do container de série para Xbox Series X */
+.container-series-x {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+}
+
+/* Estilo do label para Xbox Series X */
+.container-series-x label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 10px 0;
+}
+
+/* Estilo do h4 para Xbox Series X */
+.container-series-x h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 10px 0;
+  width: auto;
+  text-align: center;
+}
+
+/* Estilo da imagem para Xbox Series X */
+.container-series-x img {
+  margin-top: 4%;
+  border-radius: 10px;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* Estilo do botão para Xbox Series X */
+.container-series-x button {
+  padding: 10px;
+  background-color: #008000;
+  color: white;
+  border: solid;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 60%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container-conteudo-x p {
+  margin: 0;
+  text-align: left;
+  color: white;
+  text-align: justify; /* Justificar o texto */
+}
+
+/* Contêiner pai para Xbox Series S */
+.xbox-seriesS-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Estilo do container de conteúdo para Xbox Series S */
+.container-conteudo-s {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Estilo do parágrafo para Xbox Series S */
+.container-conteudo-s p {
+  margin: 0;
+  text-align: left;
+  color: white;
+  text-align: justify; /* Justificar o texto */
+}
+
+/* Estilo do container de imagem para Xbox Series S */
+.container-imagem-s {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilo do label para Xbox Series S */
+.container-imagem-s label {
+  margin-top: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+/* Estilo da imagem para Xbox Series S */
+.container-imagem-s img {
+  max-width: 80%;
+  max-height: 80%;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+/* Estilo do h4 para Xbox Series S */
+.container-imagem-s h4 {
+  margin: 10px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  width: auto;
+  text-align: center;
+}
+
+/* Estilo do botão para Xbox Series S */
+.botao-series-s {
+  padding: 10px;
+  background-color: #008000;
+  color: white;
+  border: solid;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 60%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: crimson;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .xbox-seriesX-div,
+  .xbox-seriesS-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-conteudo-x,
+  .container-series-x,
+  .container-conteudo-s,
+  .container-imagem-s {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-series-x label,
+  .container-series-x h4,
+  .container-series-x button,
+  .container-imagem-s label,
+  .container-imagem-s h4,
+  .botao-series-s {
+    margin: 10px 0;
+    width: 80%;
+  }
+
+  .container-series-x img,
+  .container-imagem-s img {
+    margin-top: 10px;
+  }
+
+  .container-series-x button,
+  .botao-series-s {
+    width: 80%;
+  }
+}
