@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <title>Tela Inicial - XBOX</title>
-  </head>
-
-
-  <script src="index.js"></script>
-  
-  <div class="div-menu">
-    <header class="header-pagina">
-        <img src="icons8-xbox.svg" class="svg-xbox" />
-        <p>XBOX</p>
-        <div class="menu-pagina-inicial" id="menu-pagina-inicial">☰</div>
-        <div class="nav-pagina-inicial">
-            <nav>
-                <li><a href="#">GAMEPASS</a></li>
-                <li><a href="#">DISPOSITIVOS</a></li>
-                <li><a href="#">SOBRE NÓS</a></li>
-                <div class="div-usuario">
-                    <img src="Pedro.jpg" class="usuario" />
-                    <label>Pedro Yokada</label>
-                </div>
-            </nav>
-        </div>
-    </header>
-</div>
+</head>
+<body>
+    <div class="div-menu">
+        <header class="header-pagina">
+            <img src="icons8-xbox.svg" class="svg-xbox" />
+            <p>XBOX</p>
+            <div class="menu-pagina-inicial" id="menu-pagina-inicial">☰</div>
+            <div class="nav-pagina-inicial">
+                <nav>
+                    <li><a href="assinatura-gamepass/index.html">GAMEPASS</a></li>
+                    <li><a href="sobre-nos/index.html">SOBRE NÓS</a></li>
+                    <div class="div-usuario">
+                        <img src="Pedro.jpg" class="usuario" />
+                        <label>Pedro Yokada</label>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
 
     <div class="div-game">
-      <img src="cyberpunk.jpg" class="img-cyberpunk" />
-      <input type="button" value="PRÉ-ENCOMENDA" class="botao-pré-encomenda" />
+        <img src="cyberpunk.jpg" class="img-cyberpunk" />
+        <input type="button" value="PRÉ-ENCOMENDA" class="botao-pré-encomenda" />
     </div>
 
     <div class="div-botoes">
-      <div class="container-headset">
-        <input
-          type="image"
-          src="icones/headset icon/icons8-headset-96.png"
-          class="headset"
-          alt="Headset Icon"
-        />
-        <br />
-        <label>ACESSÓRIOS</label>
-      </div>
-      <div class="container-play">
-        <input
-          type="image"
-          src="icones/play icon/icons8-reproduzir-100.png"
-          class="play"
-        />
-        <br />
-        <label>JOGAR</label>
-      </div>
-
-      <div class="container-usuario">
-        <input
-          type="image"
-          src="icones/user icon/icons8-usuário-de-gênero-neutro-96.png"
-          class="play"
-        />
-        <label>CONTA</label>
-      </div>
-
-      <div class="container-logout">
-        <input type="image" src="icones/logout icon/logout.png" class="play" />
-        <br />
-        <label>LOGOUT</label>
-      </div>
+        <div class="container-headset">
+            <input
+                type="image"
+                src="icones/headset icon/icons8-headset-96.png"
+                class="headset"
+                alt="Headset Icon"
+                onclick="acessorios()"
+            />
+            <br />
+            <label>ACESSÓRIOS</label>
+        </div>
+        <div class="container-play">
+            <input
+                type="image"
+                src="icones/play icon/icons8-reproduzir-100.png"
+                class="play"
+                alt="Play Icon"
+                onclick="jogar()"
+            />
+            <br />
+            <label>JOGAR</label>
+        </div>
+        <div class="container-usuario">
+            <input
+                type="image"
+                src="icones/user icon/icons8-usuário-de-gênero-neutro-96.png"
+                class="user"
+                alt="User Icon"
+                onclick="cadastro()"
+            />
+            <br />
+            <label>CADASTRO</label>
+        </div>
+        <div class="container-logout">
+            <input
+                type="image"
+                src="icones/logout icon/logout.png"
+                class="logout"
+                alt="Logout Icon"
+                onclick="logout()"
+            />
+            <br />
+            <label>LOGOUT</label>
+        </div>
     </div>
-  </body>
+
+    <script src="index.js"></script>
+</body>
 </html>
