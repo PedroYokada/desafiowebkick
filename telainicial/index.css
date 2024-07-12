@@ -1,8 +1,10 @@
+/* Estilos gerais */
 body {
   background-color: #38b000;
   margin: 0;
 }
 
+/* Estilos do cabeçalho */
 .div-menu {
   width: 98%;
   height: 100px;
@@ -24,13 +26,15 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 30px;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 .header-pagina nav {
   display: flex;
   margin: 5px;
   list-style: none;
-  justify-content: space-between;
+  justify-content: center; /* Centralizar os links */
   padding: 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
@@ -38,41 +42,36 @@ body {
 }
 
 .header-pagina nav li {
-  margin: 0 5px;
+  margin: 0 10px; /* Espaçamento dos itens */
   margin-top: 22px;
 }
 
 .header-pagina nav a {
   color: white;
   text-decoration: none;
-  padding: 175px;
+  padding: 10px;
   font-size: 18px;
 }
 
 .header-pagina .div-usuario {
   display: flex;
-  margin-top: -5px;
+  align-items: center;
+  margin-left: auto; /* Colocar a div do usuário à direita */
 }
 
 .header-pagina .usuario {
   height: 80px;
   width: 90px;
-  border-radius: 200px;
+  border-radius: 50%; /* Forma circular */
   object-fit: cover;
-}
-
-.header-pagina label {
-  margin-top: 25px;
-  margin-left: 20px;
+  margin-left: 10px; /* Espaçamento entre a foto e o texto */
 }
 
 .svg-xbox {
   filter: brightness(0) invert(1);
-  margin-right: 20px;
   height: 65px;
   width: 65px;
-  margin-left: 10px;
-  margin-top: 0px;
+  margin-right: 10px; /* Espaçamento do ícone do Xbox com o texto */
 }
 
 .menu-pagina-inicial {
@@ -85,13 +84,28 @@ body {
   display: flex;
 }
 
+.nav-pagina-inicial nav {
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-pagina-inicial nav li {
+  margin: 10px 0;
+}
+
+.nav-pagina-inicial.show {
+  display: flex;
+}
+
+
+/* Estilos da seção de jogos */
 .div-game {
   position: relative;
   width: 100%;
   max-width: 1600px;
   height: 700px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 150px;
 }
 
 .games img {
@@ -103,6 +117,7 @@ body {
 .games img.active {
   display: block;
 }
+
 .voltar,
 .proximo {
   cursor: pointer;
@@ -158,7 +173,6 @@ body {
   z-index: 10; /* Certifique-se de que os pontos estejam acima de outros elementos */
 }
 
-
 .active,
 .ponto:hover {
   transition: 0.5s;
@@ -197,7 +211,7 @@ body {
   }
 }
 
-
+/* Estilos do botão de pré-encomenda */
 .botao-pré-encomenda {
   background-color: #38b000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -208,8 +222,8 @@ body {
   display: block;
   position: absolute;
   top: 30%;
-  left: 50%;
-  transform: translate(250%, -50%);
+  left: 80%;
+  transform: translate(-50%, -50%);
   border-style: groove;
   border-color: #4c4c4c;
   cursor: pointer;
@@ -219,462 +233,483 @@ body {
   background-color: crimson;
 }
 
+/* Estilos dos botões de acesso rápido */
 .div-botoes {
   display: flex;
   justify-content: space-around;
-  width: 1865px;
+  width: 100%;
+  max-width: 1865px;
   height: 200px;
   position: relative;
-  top: 40%;
+  margin-top: 5%;
 }
 
-.container-headset {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  left: 10%;
-  top: 5%;
-}
-
-.container-headset input {
-  width: 130px;
-  height: 130px;
-  margin-left: 10px;
-}
-
-.container-headset label {
-  margin-left: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  color: white;
-}
-
-.headset {
-  width: 140px;
-  height: 130px;
-  margin-left: 150px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.container-play {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  left: 35%;
-  top: 10%;
-}
-
-.container-play input {
-  width: 130px;
-  height: 130px;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.container-play label {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  color: white;
-  position: absolute;
-  top: 140px;
-  left: 40%;
-  transform: translateX(-50%);
-}
-
-.container-usuario {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: 55%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-}
-
-.container-usuario input {
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  right: 5%;
-  top: 1%;
-}
-
-.container-usuario label {
-  margin-left: 28px;
-  top: 80%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  color: white;
-  position: absolute;
-  left: 15%;
-  top: 85%;
-}
-
+.container-headset,
+.container-play,
+.container-usuario,
 .container-logout {
   width: 150px;
   height: 150px;
-  position: absolute;
-  right: 5%;
-  top: 15%;
+  position: relative;
 }
 
+.container-headset {
+  order: 1;
+}
+
+.container-play {
+  order: 2;
+}
+
+.container-usuario {
+  order: 3;
+}
+
+.container-logout {
+  order: 4;
+}
+
+.container-headset input,
+.container-play input,
+.container-usuario input,
 .container-logout input {
+  width: 150px;
+  height: 150px;
+}
+
+.headset,
+.play,
+.user,
+.logout {
   width: 120px;
   height: 120px;
+  cursor: pointer;
 }
 
+.container-headset label,
+.container-play label,
+.container-usuario label,
 .container-logout label {
-  position: absolute;
-  right: 35%;
-  top: 90%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 25px; /* Exemplo de tamanho de fonte ajustável */
   color: white;
+  position: absolute;
+  top: 120%; /* Ajuste conforme necessário para o alinhamento vertical */
+  left: 50%; /* Ajuste conforme necessário para o alinhamento horizontal */
+  transform: translate(-50%, -50%); /* Centraliza o label no container */
 }
 
-@media (max-width: 480px) {
-  .div-botoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    height: 500px;
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .header-pagina p {
+    font-size: 24px;
   }
 
-  .container-headset {
-    top: 50%;
-    padding: 2%;
+  .header-pagina nav {
+    font-size: 16px;
   }
 
-  .container-play {
-    top: 50%;
-    left: 80%;
+  .header-pagina .usuario {
+    height: 60px;
+    width: 70px;
   }
 
-  .container-usuario {
-    top: 120%;
-    left: 25%;
-  }
-
-  .container-logout {
-    top: 100%;
-    left: 80%;
-  }
-
-  .container-headset label {
-    top: 80%;
-    left: 5%;
-  }
-
-  .container-usuario label {
-    top: 70%;
-    left: -120%;
-  }
-
-  .container-play label {
-    top: 80%;
-    left: 40%;
-  }
-
-  .container-logout label {
-    top: 70%;
-    left: -20%;
-  }
-
-  .div-game,
-  .img-cyberpunk {
-    position: relative;
-    top: 50%;
-    width: 500px;
-    height: 620px;
+  .svg-xbox {
+    height: 50px;
+    width: 50px;
   }
 
   .botao-pré-encomenda {
-    position: relative;
-    top: -30%;
-    left: -20%;
+    font-size: 14px;
     width: 150px;
+    height: 40px;
+    top: 25%;
   }
 
-  .div-menu,
-  .header-pagina {
-    width: 200px;
-    height: 100px;
-  }
-
-  .menu-pagina-inicial {
-    display: block;
-  }
-
-  .nav-pagina-inicial {
-    display: none;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background: #4c4c4c;
-  }
-
-  .nav-pagina-inicial nav {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .nav-pagina-inicial nav li {
-    margin: 10px 0;
-  }
-
-  .nav-pagina-inicial.show {
-    display: flex;
-  }
-}
-
-@media (max-width: 480px) {
   .div-botoes {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    width: auto;
-    height: 500px;
+    top: 30%;
   }
 
   .container-headset,
   .container-play,
   .container-usuario,
   .container-logout {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50px;
-    height: 150px;
-    margin: 5rem 0;
-  }
-
-  .container-headset {
-    top: 50%;
-    padding: 2%;
-  }
-
-  .container-play {
-    top: 50%;
-    left: 80%;
-  }
-
-  .container-usuario {
-    top: 120%;
-    left: 25%;
-  }
-
-  .container-logout {
-    top: 100%;
-    left: 80%;
-  }
-
-  .container-headset label,
-  .container-play label,
-  .container-usuario label,
-  .container-logout label {
-    font-size: 1.1rem;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
   }
 
   .container-headset input,
   .container-play input,
   .container-usuario input,
   .container-logout input {
-    width: 6rem;
-    height: 7rem;
-  }
-
-  .container-headset label {
-    top: 90%;
-    left: 5%;
-  }
-
-  .container-usuario label {
-    top: 70%;
-    left: -120%;
+    width: 80px;
+    height: 80px;
   }
 
   .container-play label {
-    top: 80%;
-    left: 40%;
+    top: 130px;
+  }
+
+  .container-usuario label {
+    top: 75%;
+    font-size: 16px;
   }
 
   .container-logout label {
-    top: 70%;
-    left: -20%;
-  }
-
-  .div-game,
-  .img-cyberpunk {
-    position: relative;
-    top: 50%;
-    width: 300px;
-    height: 620px;
-  }
-  .botao-pré-encomenda {
-    position: relative;
-    top: -30%;
-    left: -20%;
-    width: 150px;
-  }
-
-  .div-menu,
-  .header-pagina {
-    width: 200px;
-    height: 100px;
-  }
-
-  .menu-pagina-inicial {
-    display: block;
-  }
-
-  .nav-pagina-inicial {
-    display: none;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background: #4c4c4c;
-  }
-
-  .nav-pagina-inicial nav {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .nav-pagina-inicial nav li {
-    margin: 10px 0;
-  }
-
-  .nav-pagina-inicial.show {
-    display: flex;
+    top: 80%;
+    right: 5%;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 480px) {
+  .header-pagina p {
+    font-size: 20px;
+  }
+
+  .header-pagina nav {
+    font-size: 14px;
+  }
+
+  .header-pagina .usuario {
+    height: 50px;
+    width: 60px;
+  }
+
+  .svg-xbox {
+    height: 40px;
+    width: 40px;
+  }
+
+  .botao-pré-encomenda {
+    font-size: 12px;
+    width: 130px;
+    height: 30px;
+    top: 20%;
+  }
+
   .div-botoes {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    width: auto;
-    height: 1200px;
+    top: 25%;
   }
 
   .container-headset,
   .container-play,
   .container-usuario,
   .container-logout {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50px;
-    height: 200px;
-    margin: 5rem 0;
-  }
-
-  .container-headset {
-    top: 50%;
-    padding: 2%;
-  }
-
-  .container-play {
-    top: 50%;
-    left: 80%;
-  }
-
-  .container-usuario {
-    top: 100%;
-    left: 15%;
-  }
-
-  .container-logout {
-    top: 90%;
-    left: 80%;
-  }
-
-  .container-headset label,
-  .container-play label,
-  .container-usuario label,
-  .container-logout label {
-    font-size: 1.1rem;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
   }
 
   .container-headset input,
   .container-play input,
   .container-usuario input,
   .container-logout input {
-    width: 6rem;
-    height: 7rem;
+    width: 60px;
+    height: 60px;
   }
 
-  .container-headset label {
-    top: 80%;
-    left: 5%;
+  .container-play label {
+    top: 110px;
+    font-size: 14px;
   }
 
   .container-usuario label {
     top: 70%;
-    left: -120%;
-  }
-
-  .container-play label {
-    top: 80%;
-    left: 40%;
+    font-size: 14px;
   }
 
   .container-logout label {
-    top: 70%;
-    left: -20%;
+    top: 75%;
+    right: 5%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-pagina p {
+    font-size: 20px;
   }
 
-  .div-game,
-  .img-cyberpunk {
-    position: relative;
-    top: 50%;
-    width: 960px;
-    height: 620px;
+  .header-pagina nav {
+    font-size: 14px;
   }
+
+  .header-pagina .usuario {
+    height: 50px;
+    width: 60px;
+  }
+
+  .svg-xbox {
+    height: 40px;
+    width: 40px;
+  }
+
   .botao-pré-encomenda {
-    position: relative;
-    top: -20%;
-    left: 30%;
-    width: 150px;
+    font-size: 12px;
+    width: 130px;
+    height: 30px;
+    top: 20%;
   }
 
-  .div-menu,
-  .header-pagina {
-    width: 930px;
+  .div-botoes {
+    display: flex; /* Adicionei para garantir que o flex funcione corretamente */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px; /* Substituí 'top' por 'margin-top' para espaçamento */
+  }
+
+  .div-botoes > * {
+    margin-bottom: 20px; /* Adicionado espaçamento entre os elementos */
+  }
+
+  .container-headset,
+  .container-play,
+  .container-usuario,
+  .container-logout {
+    width: 80px;
+    height: 80px;
+    margin: 10px; /* Ajustado para espaçamento entre os containers */
+  }
+
+  .container-headset input,
+  .container-play input,
+  .container-usuario input,
+  .container-logout input {
+    width: 60px;
+    height: 60px;
+  }
+
+  .container-play label {
+    margin-top: 10px; /* Substituí 'top' por 'margin-top' para espaçamento */
+    font-size: 14px;
+  }
+
+  .container-usuario label {
+    margin-top: 10px; /* Substituí 'top' por 'margin-top' para espaçamento */
+    font-size: 14px;
+  }
+
+  .container-logout label {
+    margin-top: 10px; /* Substituí 'top' por 'margin-top' para espaçamento */
+    font-size: 14px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-pagina p {
+    font-size: 20px;
+  }
+
+  .header-pagina nav {
+    font-size: 14px;
+  }
+
+  .header-pagina .usuario {
+    height: 50px;
+    width: 60px;
+  }
+
+  .svg-xbox {
+    height: 40px;
+    width: 40px;
+  }
+
+  .botao-pré-encomenda {
+    font-size: 12px;
+    width: 130px;
+    height: 30px;
+    top: 20%;
+  }
+
+  .div-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .div-botoes > * {
+    margin-bottom: 20px;
+  }
+
+  .container-headset,
+  .container-play,
+  .container-usuario,
+  .container-logout {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-headset input,
+  .container-play input,
+  .container-usuario input,
+  .container-logout input {
+    width: 60px;
+    height: 60px;
+  }
+
+  .container-play label,
+  .container-usuario label,
+  .container-logout label {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-pagina p {
+    font-size: 20px;
+  }
+
+  .header-pagina nav {
+    font-size: 14px;
+  }
+
+  .header-pagina .usuario {
+    height: 50px;
+    width: 60px;
+  }
+
+  .svg-xbox {
+    height: 40px;
+    width: 40px;
+  }
+
+  .botao-pré-encomenda {
+    font-size: 12px;
+    width: 130px;
+    height: 30px;
+    top: 20%;
+  }
+
+  .div-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    margin-top: 25px;
+    height: 100%; /* Ajusta a altura para ocupar toda a altura disponível */
+    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+  }
+
+  .div-botoes > * {
+    margin-bottom: 20px;
+  }
+
+  .container-headset,
+  .container-play,
+  .container-usuario,
+  .container-logout {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-headset input,
+  .container-play input,
+  .container-usuario input,
+  .container-logout input {
+    width: 100px;
     height: 100px;
   }
 
-  .menu-pagina-inicial {
+  .container-play label,
+  .container-headset label,
+  .container-usuario label,
+  .container-logout label {
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
     display: block;
   }
+}
 
-  .nav-pagina-inicial {
-    display: none;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background: #4c4c4c;
+@media (max-width: 768px) {
+  .header-pagina p {
+    font-size: 20px;
   }
 
-  .nav-pagina-inicial nav {
-    flex-direction: column;
-    width: 100%;
+  .header-pagina nav {
+    font-size: 14px;
   }
 
-  .nav-pagina-inicial nav li {
-    margin: 10px 0;
+  .header-pagina .usuario {
+    height: 50px;
+    width: 60px;
   }
 
-  .nav-pagina-inicial.show {
+  .svg-xbox {
+    height: 40px;
+    width: 40px;
+  }
+
+  .botao-pré-encomenda {
+    font-size: 12px;
+    width: 130px;
+    height: 30px;
+    top: 20%;
+  }
+
+  .div-botoes {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .div-botoes > * {
+    margin-bottom: 20px;
+  }
+
+  .container-headset,
+  .container-play,
+  .container-usuario,
+  .container-logout {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-headset input,
+  .container-play input,
+  .container-usuario input,
+  .container-logout input {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container-play label,
+  .container-headset label,
+  .container-usuario label,
+  .container-logout label {
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    display: block;
   }
 }
+
+
