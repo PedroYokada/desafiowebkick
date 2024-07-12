@@ -87,18 +87,22 @@ body {
 
 .div-game {
   position: relative;
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   height: 700px;
-  position: relative;
   margin: auto;
   margin-top: 20px;
 }
 
-img {
-  width: 1600px;
+.games img {
+  width: 100%;
   height: 700px;
+  display: none;
 }
 
+.games img.active {
+  display: block;
+}
 .voltar,
 .proximo {
   cursor: pointer;
@@ -110,6 +114,7 @@ img {
   margin-top: -22px;
   font-size: 32px;
   font-weight: bold;
+  user-select: none;
 }
 
 .proximo {
@@ -150,10 +155,12 @@ img {
   background-color: rgba(175, 25, 25, 0.774);
   border-radius: 50%;
   display: inline-block;
+  z-index: 10; /* Certifique-se de que os pontos estejam acima de outros elementos */
 }
 
+
 .active,
-.dot:hover {
+.ponto:hover {
   transition: 0.5s;
   background-color: #717171;
 }
@@ -161,6 +168,8 @@ img {
 .dots_box {
   text-align: center;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .games {
@@ -169,6 +178,7 @@ img {
   animation-name: animacao;
   animation-duration: 1.5s;
 }
+
 @keyframes animacao {
   from {
     opacity: 0.4;
@@ -186,6 +196,7 @@ img {
     opacity: 1;
   }
 }
+
 
 .botao-pré-encomenda {
   background-color: #38b000;
