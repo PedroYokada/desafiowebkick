@@ -287,12 +287,12 @@ body {
 /* Responsividade */
 @media (max-width: 768px) {
 
-  .header-pagina{
-    height: 9.5rem; /* 50px */
-    width: 43rem; /* 50px */
+  .header-pagina {
+    width: 43.8rem; /* 400px */
+    height: 6.25rem; /* 100px */
   }
   .header-pagina p {
-    font-size: 3.25rem; /* 20px */
+    font-size: 1.9rem; /* 30px */
   }
 
   .header-pagina nav {
@@ -300,14 +300,15 @@ body {
   }
 
   .header-pagina .usuario {
-    height: 3.5rem; /* 50px */
-    width: 3.5rem; /* 50px */
+    height: 3.125rem; /* 50px */
+    width: 3.125rem; /* 50px */
   }
 
   .svg-xbox {
-    height: 7.0rem; /* 40px */
-    width: 4.0rem; /* 40px */
+    height: 3.75rem; /* 60px */
+    width: 3.75rem; /* 60px */
   }
+
 
   .botao-pré-encomenda {
     font-size: 1rem; /* 16px */
@@ -319,9 +320,9 @@ body {
   .div-botoes {
     flex-direction: column;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 80px;
     max-width: 600px;
-    height: 600px;
+    height: auto;
   }
 
   .container-headset,
@@ -329,8 +330,9 @@ body {
   .container-usuario,
   .container-logout {
     width: 9.375rem; /* 150px */
-    height: 6.25rem; /* 100px */
-    margin: 5px;
+    height: 9.375rem; /* 150px */
+    margin: 10px;
+    margin-left: 140px;
   }
 
   .container-headset input,
@@ -345,7 +347,8 @@ body {
   .container-headset label,
   .container-usuario label,
   .container-logout label {
-    top: 7.5rem; /* 120px */
+    top: 100%;
+    margin-left: -25px;
     font-size: 1.125rem; /* 18px */
     text-align: center;
   }
@@ -407,7 +410,8 @@ body {
   .div-botoes {
     flex-direction: column;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 70px;
+    margin-left: 30px;
     max-width: 600px;
     height: 600px;
   }
