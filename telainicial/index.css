@@ -97,7 +97,6 @@ body {
   display: flex;
 }
 
-
 /* Estilos da seção de jogos */
 .div-game {
   position: relative;
@@ -451,9 +450,9 @@ body {
 
   .botao-pré-encomenda {
     font-size: 12px;
-    width: 130px;
+    width: 120px;
     height: 30px;
-    top: 20%;
+    top: 10%;
   }
 
   .div-botoes {
@@ -499,144 +498,10 @@ body {
     font-size: 14px;
     right: 5%;
   }
-}
 
-@media (max-width: 480px) {
-  .header-pagina p {
-    font-size: 20px;
-  }
-
-  .header-pagina nav {
-    font-size: 14px;
-  }
-
-  .header-pagina .usuario {
-    height: 50px;
-    width: 60px;
-  }
-
-  .svg-xbox {
-    height: 40px;
-    width: 40px;
-  }
-
-  .botao-pré-encomenda {
-    font-size: 12px;
-    width: 130px;
-    height: 30px;
-    top: 20%;
-  }
-
-  .div-botoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
-  }
-
-  .div-botoes > * {
-    margin-bottom: 20px;
-  }
-
-  .container-headset,
-  .container-play,
-  .container-usuario,
-  .container-logout {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .container-headset input,
-  .container-play input,
-  .container-usuario input,
-  .container-logout input {
-    width: 60px;
-    height: 60px;
-  }
-
-  .container-play label,
-  .container-usuario label,
-  .container-logout label {
-    margin-top: 10px;
-    font-size: 14px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-pagina p {
-    font-size: 20px;
-  }
-
-  .header-pagina nav {
-    font-size: 14px;
-  }
-
-  .header-pagina .usuario {
-    height: 50px;
-    width: 60px;
-  }
-
-  .svg-xbox {
-    height: 40px;
-    width: 40px;
-  }
-
-  .botao-pré-encomenda {
-    font-size: 12px;
-    width: 130px;
-    height: 30px;
-    top: 20%;
-  }
-
-  .div-botoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Centraliza verticalmente */
-    margin-top: 25px;
-    height: 100%; /* Ajusta a altura para ocupar toda a altura disponível */
-    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
-  }
-
-  .div-botoes > * {
-    margin-bottom: 20px;
-  }
-
-  .container-headset,
-  .container-play,
-  .container-usuario,
-  .container-logout {
-    width: 100px;
-    height: 100px;
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container-headset input,
-  .container-play input,
-  .container-usuario input,
-  .container-logout input {
-    width: 100px;
-    height: 100px;
-  }
-
-  .container-play label,
-  .container-headset label,
-  .container-usuario label,
-  .container-logout label {
-    margin-top: 50px;
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-    display: block;
+  .div-game img {
+    width: 445px;
+    height: 500px;
   }
 }
 
@@ -660,10 +525,10 @@ body {
   }
 
   .botao-pré-encomenda {
-    font-size: 12px;
-    width: 130px;
-    height: 30px;
-    top: 20%;
+    font-size: 16px;
+    width: 170px;
+    height: 50px;
+    top: 25%;
   }
 
   .div-botoes {
@@ -711,5 +576,3 @@ body {
     display: block;
   }
 }
-
-
