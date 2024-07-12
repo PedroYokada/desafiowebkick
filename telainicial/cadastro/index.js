@@ -70,5 +70,3 @@ jQuery("#telefone")
     window.location.href = "../../telainicial/index.html"; 
   }
   
-
-
