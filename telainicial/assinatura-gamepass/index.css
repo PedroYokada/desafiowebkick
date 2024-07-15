@@ -45,25 +45,29 @@ header h1 {
   max-width: auto;
   height: auto;
   flex-wrap: wrap;
+
 }
 
 .div-assinatura-principal1 {
   border-style: solid;
-  border-color: #221c1c;
+  border-color: #ffffff;
   border-radius: 10px;
   width: 300px;
   height: 600px;
+  background-color: #4c4c4c;
 }
 
 .div-assinatura-principal1 h2 {
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
+
 }
 
 .container-pcgamepass {
   align-items: center;
   display: row;
+  filter: brightness(0) invert(1);
 }
 
 .div-paragrafo-confirma1 {
@@ -71,7 +75,7 @@ header h1 {
   padding: 10px;
   margin-left: 10px;
   gap: 5px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -83,12 +87,12 @@ header h1 {
 
 .div-assinar label {
   display: flex;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
 .div-assinar input {
-  background-color: #4c4c4c;
+  background-color: #38b000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 50px;
   width: 150px;
@@ -102,14 +106,16 @@ header h1 {
   width: 310px;
   height: 600px;
   border-radius: 10px;
+  background-color: #4c4c4c;
+  border-color: #ffffff;
 }
 
 .div-assinatura-principal2 p {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .div-assinatura-principal2 h2 {
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
 }
@@ -123,8 +129,8 @@ header h1 {
   display: flex;
   padding: 5px;
   gap: 5px;
-  color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  filter: brightness(0) invert(1);
 }
 
 .div-assinar2 {
@@ -134,12 +140,12 @@ header h1 {
 
 .div-assinar2 label {
   display: flex;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
 .div-assinar2 input {
-  background-color: #4c4c4c;
+  background-color: #38b000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 50px;
   width: 150px;
@@ -148,21 +154,24 @@ header h1 {
   margin-right: 80px;
 }
 
+
+
 .div-assinatura-principal3 {
   margin-left: 200px;
   width: 310px;
   height: 600px;
   border-radius: 10px;
-  border-color: #221c1c;
+  border-color: #ffffff;
   border-style: solid;
+  background-color: #4c4c4c;
 }
 
 .div-assinatura-principal3 p {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .div-assinatura-principal3 h2 {
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
 }
@@ -170,14 +179,15 @@ header h1 {
 .container-pcgamepass3 {
   align-items: center;
   display: row;
+
 }
 
 .div-paragrafo-confirma3 {
   display: flex;
   padding: 5px;
   gap: 5px;
-  color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  filter: brightness(0) invert(1);
 }
 
 .div-assinar3 {
@@ -188,12 +198,12 @@ header h1 {
 
 .div-assinar3 label {
   display: flex;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
 .div-assinar3 input {
-  background-color: #4c4c4c;
+  background-color: #38b000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 50px;
   width: 150px;
