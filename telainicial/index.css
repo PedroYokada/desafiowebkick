@@ -442,10 +442,6 @@ body {
     text-align: center;
   }
 
-  .header-pagina .menu-pagina-inicial {
-    display: block;
-  }
-
   .header-pagina .nav-pagina-inicial {
     display: none;
     flex-direction: column;

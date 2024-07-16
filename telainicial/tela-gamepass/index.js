@@ -1,5 +1,4 @@
 function voltar() {
-  console.log("Redirecionando para a página de acessórios...");
   window.location.href = "../../telainicial/index.html";
 }
 
@@ -39,3 +38,13 @@ function mostrar_fotos(n) {
   fotos[index_fotos - 1].getElementsByTagName("img")[0].classList.add("active");
   pontos[index_fotos - 1].className += " active";
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const MenuPagina = document.getElementById("menu-pagina-inicial");
+  const navInicial = document.querySelector(".nav-pagina-inicial");
+
+  MenuPagina.addEventListener("click", function () {
+      navInicial.classList.toggle("show");
+  });
+});
