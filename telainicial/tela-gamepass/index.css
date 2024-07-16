@@ -14,7 +14,6 @@ body {
   border-radius: 10px;
   padding: 10px;
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
@@ -22,29 +21,30 @@ body {
 header {
   display: flex;
   align-items: center;
-  gap: 130px;
+  justify-content: space-between;
 }
 
 .xbox,
-.lupa,
 .biblioteca,
-.nuvem .carrinho,
+.nuvem,
+.carrinho,
 .configuracao,
 .voltar,
-.pesquisar,
-.usuario {
-  width: 70px;
-  height: 70px;
+.pesquisar {
+  width: 60px;
+  height: auto;
+  max-width: 100%;
+  margin-right: 5px; /* Reduz a margem entre os ícones */
 }
 
-.carrinho {
-  filter: brightness(0) invert(100%);
-  width: 50px;
-  height: 50px;
+.voltar-pagina-inicial {
+  width: 70px; /* Ajuste o tamanho desejado */
+  height: 70px; /* Ajuste o tamanho desejado */
 }
 
 .caixa-texto {
-  width: 350px;
+  flex: 1; /* Ocupa o espaço restante */
+  max-width: 300px;
   background-color: #4c4c4c;
   border: none;
   border-radius: 10px;
@@ -52,6 +52,7 @@ header {
   color: white;
   padding: 0 10px;
   box-sizing: border-box;
+  margin-left: 10px; /* Reduz a margem à esquerda da caixa de texto */
 }
 
 .usuario {
@@ -59,6 +60,34 @@ header {
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
+  margin-left: 10px; /* Reduz a margem entre a imagem do usuário e o ícone anterior */
+}
+
+.label-usuario {
+  margin-left: 5px; /* Reduz a margem entre a imagem do usuário e o texto */
+}
+
+@media screen and (max-width: 768px) {
+  .div-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caixa-texto {
+    width: 80%;
+    max-width: none;
+    margin: 10px 0; /* Ajusta a margem vertical da caixa de texto */
+  }
+
+  .usuario {
+    width: 80px;
+    height: 80px;
+    margin-left: 0; /* Remove a margem entre a imagem do usuário e o ícone anterior em telas menores */
+  }
+
+  .label-usuario {
+    margin: 5px 0; /* Ajusta a margem vertical do texto do usuário */
+  }
 }
 
 label {
@@ -70,10 +99,11 @@ label {
 .div-usuario {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .card-container {
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -122,9 +152,126 @@ label {
 
 .divfooter {
   background-color: #38b000;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
   border-radius: 10px;
-  padding: 10px;
+  margin-top: 20px;
+}
+
+footer {
+  color: #fff;
+  font-size: 14px;
+}
+
+.div-game {
+  position: relative;
+  max-width: 1800px;
+  margin: auto;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+
+.div-game {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  height: 700px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.games img {
+  width: 100%;
+  height: 700px;
+  display: none;
+}
+
+.games img.active {
+  display: block;
+}
+
+.voltar,
+.proximo {
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: -22px;
+  font-size: 2rem; /* 32px */
+  font-weight: bold;
+  user-select: none;
+}
+
+.proximo {
+  right: 0;
+}
+
+.voltar:hover,
+.proximo:hover {
+  transition: 0.2s;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.n_jogos {
+  color: white;
+  background-color: black;
+  font-size: 1.875rem; /* 30px */
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.i_text {
+  color: white;
+  background-color: black;
+  font-size: 1.875rem; /* 30px */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.ponto {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 0px 2px;
+  background-color: rgba(175, 25, 25, 0.774);
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 10;
+}
+
+.active,
+.ponto:hover {
+  transition: 0.5s;
+  background-color: #717171;
+}
+
+.dots_box {
   text-align: center;
   margin-top: 20px;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.games {
+  animation: animacao 1.5s;
+}
+
+@keyframes animacao {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }

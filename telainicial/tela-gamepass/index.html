@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,6 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="index.js"></script>
     <div class="div-header">
       <header>
         <img src="icones/xbox icon/icons8-xbox.svg" class="xbox" />
@@ -31,12 +30,6 @@
           src="icones/configuração icon/vecteezy_illustration-vector-graphic-of-configuration-gear-settings_20713691.svg"
           class="configuracao"
         />
-        <input
-          type="image"
-          src="icones/voltar icon/voltar.png"
-          class="voltar"
-          onclick="voltar()"
-        />
         <input type="text" class="caixa-texto" placeholder="Pesquisar..." />
         <input
           type="image"
@@ -50,7 +43,49 @@
           />
           <label>Pedro Yokada</label>
         </div>
+        <input
+          type="image"
+          src="icones/voltar icon/voltar.png"
+          class="voltar-pagina-inicial"
+          onclick="voltar()"
+        />
       </header>
+    </div>
+
+    <div class="div-game">
+      <div class="games active">
+        <div class="n_jogos">1 / 4</div>
+        <img src="imagens-telagamepass/bo6.jpeg" />
+        <div class="i_text">Cyberpunk</div>
+      </div>
+
+      <div class="games">
+        <div class="n_jogos">2 / 4</div>
+        <img src="imagens-telagamepass/cyberpunk.jpg" />
+        <div class="i_text">Diablo 4</div>
+      </div>
+
+      <div class="games">
+        <div class="n_jogos">3 / 4</div>
+        <img src="imagens-telagamepass/diablo4.jpg" />
+        <div class="i_text">Call of Duty Black Ops 6</div>
+      </div>
+
+      <div class="games">
+        <div class="n_jogos">4 / 4</div>
+        <img src="imagens-telagamepass/gears5.jpg" />
+        <div class="i_text">Gears of War 5</div>
+      </div>
+
+      <a class="voltar-slide" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dots_box">
+      <span class="ponto active" onclick="currentSlide(1)"></span>
+      <span class="ponto" onclick="currentSlide(2)"></span>
+      <span class="ponto" onclick="currentSlide(3)"></span>
+      <span class="ponto" onclick="currentSlide(4)"></span>
     </div>
 
     <div class="card-container">
@@ -94,7 +129,9 @@
         />
         <div class="card-xbox-conteudo">
           <h2 class="card-xbox-titulo">CALL OF DUTY MODERN WARFARE 3</h2>
-          <p class="card-descricao">Jogue o mais novo FPS da Activision Blizzard</p>
+          <p class="card-descricao">
+            Jogue o mais novo FPS da Activision Blizzard
+          </p>
         </div>
       </div>
 
@@ -120,5 +157,7 @@
         por Pedro Yokada – Turma L - Kick.
       </footer>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
