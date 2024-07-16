@@ -103,7 +103,7 @@ label {
 }
 
 .card-container {
-  margin-top: 100px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -136,12 +136,12 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 150px;
+  height: 120px;
 }
 
 .card-xbox-titulo {
   margin: 0 0 8px 0;
-  font-size: 1.5em;
+  font-size: 1.0em;
   color: #333;
 }
 
@@ -179,10 +179,10 @@ footer {
 .div-game {
   position: relative;
   width: 100%;
-  max-width: 1600px;
-  height: 700px;
+  max-width: 1200px;
+  height: 500px;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 10px;
 }
 
 .games img {
