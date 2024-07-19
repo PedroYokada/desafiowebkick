@@ -40,11 +40,11 @@ function mostrar_fotos(n) {
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const MenuPagina = document.getElementById("menu-pagina-inicial");
-  const navInicial = document.querySelector(".nav-pagina-inicial");
+document.addEventListener('DOMContentLoaded', function() {
+  const menuButton = document.querySelector('.menu-pagina-inicial');
+  const navMenu = document.querySelector('.nav-pagina-inicial');
 
-  MenuPagina.addEventListener("click", function () {
-      navInicial.classList.toggle("show");
+  menuButton.addEventListener('click', function() {
+    navMenu.classList.toggle('show');
   });
 });

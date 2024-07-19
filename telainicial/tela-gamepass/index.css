@@ -8,6 +8,7 @@ body {
   background-color: #4c4c4c;
   padding: 20px;
   box-sizing: border-box;
+  position: relative; /* Garantir posicionamento relativo do body */
 }
 
 /* Menu de navegação */
@@ -19,6 +20,7 @@ body {
   display: block;
   gap: 10px;
   margin-right: 10px; /* Ajuste a margem direita conforme necessário */
+  z-index: 10; /* Certificar que está acima do carrossel */
 }
 
 /* Estilos para a barra de navegação */
@@ -26,9 +28,15 @@ body {
   display: none;
   flex-direction: column;
   gap: 10px;
-  background-color: #38b000;
+  background-color: #008000 ;
   border-radius: 10px;
   padding: 10px;
+  border-style:solid;
+  border-color: red;
+  position: absolute; /* Posicionamento absoluto */
+  top: 70px; /* Ajuste conforme necessário */
+  right: 20px; /* Ajuste conforme necessário */
+  z-index: 10; /* Certificar que está acima do carrossel */
 }
 
 .nav-pagina-inicial.show {
@@ -43,12 +51,26 @@ body {
 }
 
 .nav-pagina-inicial li {
+  display: flex; /* Adicionado */
+  align-items: center; /* Alinha verticalmente os itens */
   margin: 10px 0;
 }
 
 .nav-pagina-inicial a {
-  color: #000;
+  display: flex; /* Adicionado para alinhar o conteúdo interno */
+  align-items: center; /* Alinha verticalmente o conteúdo */
   text-decoration: none;
+  color: #000;
+}
+
+.nav-pagina-inicial input[type="image"] {
+  width: 50px; /* Ajuste o tamanho conforme necessário */
+  height: 50px; /* Ajuste o tamanho conforme necessário */
+}
+
+.nav-pagina-inicial label {
+  margin-left: 10px; /* Espaço entre o input e o label */
+  font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
 }
 
 /* Estilos para o cabeçalho */
@@ -57,51 +79,96 @@ body {
   border-radius: 10px;
   padding: 10px;
   width: 100%;
+  height: 15vh; /* Ajuste a altura conforme necessário */
   box-sizing: border-box;
   margin-bottom: 10px;
+  z-index: 5; /* Certificar que está acima do carrossel */
+  position: relative; /* Garantir que o posicionamento seja relativo */
 }
 
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte, se necessário */
+  justify-content: space-around; /* Distribui os itens igualmente */
+  align-items: center; /* Alinha verticalmente os itens */
 }
 
-/* Estilos para ícones e imagens */
-.xbox,
-.biblioteca,
-.nuvem,
-.carrinho,
-.configuracao,
-.voltar,
-.pesquisar {
-  width: 60px;
-  height: auto;
-  max-width: 100%;
+header div {
+  display: flex;
+  flex-direction: column; /* Faz o conteúdo dos divs serem empilhados verticalmente */
+  align-items: center; /* Centraliza o conteúdo dos divs horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
 }
 
-.voltar-pagina-inicial {
+header input[type="image"] {
+  width: 60px; /* Ajuste o tamanho conforme necessário */
+  height: 60px; /* Ajuste o tamanho conforme necessário */
+  margin-bottom: 5px; /* Espaço entre o ícone e o label */
+}
+
+header label {
+  font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+  color: #000000; /* Ajuste a cor do texto conforme necessário */
+}
+
+.container-xbox {
+  width: 100px;
+  height: 130px;
+  top:10px;
+}
+
+.container-xbox img {
+  width: 70px;
+  height: 70px;
+}
+
+.container-xbox p {
+  margin-top: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Ajustes para o botão 'Voltar' */
+.div-voltar {
+  display: flex;
+  flex-direction: column; /* Alinha o botão e o label verticalmente */
+  align-items: center; /* Centraliza o conteúdo */
+  width: 70px; /* Ajuste o tamanho desejado */
+  height: 130px; /* Ajuste o tamanho desejado */
+}
+
+.div-voltar input[type="image"] {
   width: 70px; /* Ajuste o tamanho desejado */
   height: 70px; /* Ajuste o tamanho desejado */
-  margin-right: 150px;
+  margin-bottom: 5px; /* Espaço entre o ícone e o label */
+}
+
+.div-voltar p {
+  font-size: 1.2rem; /* Ajuste o tamanho da fonte conforme necessário */
+  color: #000000; /* Ajuste a cor do texto conforme necessário */
 }
 
 .caixa-texto {
   flex: 1; /* Ocupa o espaço restante */
-  max-width: 300px;
+  max-width: 300px; /* Aumente o tamanho máximo conforme necessário */
   background-color: #4c4c4c;
   border: none;
   border-radius: 10px;
-  height: 40px;
+  height: 100px; /* Aumente a altura conforme necessário */
   color: #fff;
-  padding: 0 10px;
+  padding: 0 15px; /* Ajuste o padding se necessário */
   box-sizing: border-box;
-  margin-left: 5px; /* Reduz a margem à esquerda da caixa de texto */
+  margin-left: 10px; /* Ajuste a margem esquerda conforme necessário */
+}
+
+.div-caixa-texto {
+  width: 200px;
+  height: 50px;
 }
 
 .usuario {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
   margin-left: 5px; /* Reduz a margem entre a imagem do usuário e o ícone anterior */
@@ -117,28 +184,28 @@ header {
 
 /* Estilos para telas menores */
 @media screen and (max-width: 768px) {
-
- 
   .div-header {
     flex-direction: column;
     align-items: center;
   }
-  .div-header .biblioteca, .nuvem,.carrinho,.caixa-texto,.pesquisar,.configuracao {
-   display: none;
+  .div-pesquisar label {
+    display: none;
+  }
+  .div-header .biblioteca,
+  .nuvem,
+  .carrinho,
+  .caixa-texto,
+  .pesquisar,
+  .configuracao {
+    display: none;
   }
 
   .div-usuario .usuario {
     display: none;
   }
 
-  .div-usuario label{
+  .div-usuario label {
     display: none;
-  }
-
-  .caixa-texto {
-    width: 80%;
-    max-width: none;
-    margin: 10px 0; /* Ajusta a margem vertical da caixa de texto */
   }
 
   .usuario {
@@ -171,7 +238,7 @@ header {
     width: 50px; /* Ajuste o tamanho desejado */
     height: 50px; /* Ajuste o tamanho desejado */
     border-radius: 50%; /* Garante que o input seja redondo como a imagem */
-    background-image: url('icones/usuario icon/Pedro foto de perfil.jpg'); /* Define a imagem do usuário como background */
+    background-image: url("icones/usuario icon/Pedro foto de perfil.jpg"); /* Define a imagem do usuário como background */
     background-size: cover; /* Garante que a imagem cubra todo o input */
     text-align: center; /* Centraliza o texto dentro do input */
     color: white; /* Cor do texto */
@@ -180,8 +247,6 @@ header {
     margin-left: 5px; /* Ajusta a margem entre o input e o ícone anterior */
   }
 }
-
-
 
 /* Estilos adicionais */
 .label {
@@ -271,6 +336,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  z-index: 1; /* Ajuste conforme necessário */
 }
 
 .games {
@@ -282,10 +348,62 @@ footer {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .div-game {
+    max-width: 420px;
+    height: 530px;
+    position: relative; /* Adicionado para garantir que o filho absoluto seja posicionado em relação a este elemento */
+  }
+
+  .div-header {
+    position: relative; /* Certificar que o contêiner está posicionado */
+  }
+  
+  .div-voltar {
+    position: absolute; /* Garante que o top seja aplicado */
+    width: 70px; /* Tamanho desejado */
+    height: 70px; /* Tamanho desejado */
+    margin-right: -100px; /* Ajuste a margem direita conforme necessário */
+    top:10px;
+  }
+
+  .div-caixa-texto{
+    width:10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .div-game {
+    max-width: 420px;
+    height: 530px;
+    position: relative; /* Adicionado para garantir que o filho absoluto seja posicionado em relação a este elemento */
+  }
+
+  .div-header {
+    position: relative; /* Certificar que o contêiner está posicionado */
+  }
+  
+  .div-voltar {
+    position: absolute; /* Garante que o top seja aplicado */
+    width: 70px; /* Tamanho desejado */
+    height: 70px; /* Tamanho desejado */
+    margin-right: -100px; /* Ajuste a margem direita conforme necessário */
+    top:10px;
+  }
+
+  .div-caixa-texto{
+    width:10px;
+    height: 10px;
+  }
+}
+
+/* Adicione um z-index para o carrossel */
 .games img {
   width: 100%;
   height: 700px;
   display: none;
+  z-index: 1; /* Adicionado */
 }
 
 .games img.active {
@@ -376,4 +494,3 @@ footer {
     opacity: 1;
   }
 }
-
