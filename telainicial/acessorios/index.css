@@ -35,11 +35,9 @@ header h1 {
 /* Contêiner pai para Xbox Series X */
 .xbox-seriesX-div {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
+  align-items: flex-start;
+  padding: 20px;
 }
 
 /* Estilo do container de conteúdo para Xbox Series X */
@@ -57,7 +55,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 48%;
+  width: 40%;
 }
 
 /* Estilo do label para Xbox Series X */
@@ -80,8 +78,8 @@ header h1 {
 .container-series-x img {
   margin-top: 4%;
   border-radius: 10px;
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 60%;
+  max-height: 60%;
 }
 
 /* Estilo do botão para Xbox Series X */
@@ -93,7 +91,7 @@ header h1 {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  width: 60%;
+  width: 55%;
   margin-top: 10px;
   text-align: center;
 }
@@ -103,6 +101,7 @@ header h1 {
   text-align: left;
   color: white;
   text-align: justify; /* Justificar o texto */
+  font-size: 25px;
 }
 
 /* Contêiner pai para Xbox Series S */
@@ -125,6 +124,7 @@ header h1 {
   text-align: left;
   color: white;
   text-align: justify; /* Justificar o texto */
+  font-size: 25px;
 }
 
 /* Estilo do container de imagem para Xbox Series S */
@@ -145,8 +145,8 @@ header h1 {
 
 /* Estilo da imagem para Xbox Series S */
 .container-imagem-s img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 70%;
+  max-height: 70%;
   margin: 20px 0;
   border-radius: 10px;
 }
@@ -169,7 +169,7 @@ header h1 {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  width: 60%;
+  width: 45%;
   margin-top: 10px;
   text-align: center;
 }
