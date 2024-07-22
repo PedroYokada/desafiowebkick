@@ -45,7 +45,6 @@ header h1 {
   max-width: auto;
   height: auto;
   flex-wrap: wrap;
-
 }
 
 .div-assinatura-principal1 {
@@ -61,7 +60,6 @@ header h1 {
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
-
 }
 
 .container-pcgamepass {
@@ -154,8 +152,6 @@ header h1 {
   margin-right: 80px;
 }
 
-
-
 .div-assinatura-principal3 {
   margin-left: 200px;
   width: 310px;
@@ -179,7 +175,6 @@ header h1 {
 .container-pcgamepass3 {
   align-items: center;
   display: row;
-
 }
 
 .div-paragrafo-confirma3 {
@@ -210,7 +205,6 @@ header h1 {
   color: white;
   border-radius: 10px;
   margin-right: 80px;
-  
 }
 
 .divfooter {

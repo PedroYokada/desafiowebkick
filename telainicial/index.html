@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <title>Tela Inicial - XBOX</title>
 </head>
+
 <body>
     <div class="div-menu">
         <header class="header-pagina">
@@ -31,83 +33,63 @@
             <div class="n_jogos">1 / 4</div>
             <img src="imagens-telaincial/cyberpunk.jpg" />
             <div class="i_text">Cyberpunk</div>
-          </div>
+        </div>
 
         <div class="games">
             <div class="n_jogos">2 / 4</div>
             <img src="imagens-telaincial/diablo4.jpg" />
             <div class="i_text">Diablo 4</div>
-          </div>
-    
-          <div class="games">
+        </div>
+
+        <div class="games">
             <div class="n_jogos">3 / 4</div>
             <img src="imagens-telaincial/bo6.jpeg" />
             <div class="i_text">Call of Duty Black Ops 6</div>
-          </div>
-    
-          <div class="games">
+        </div>
+
+        <div class="games">
             <div class="n_jogos">4 / 4</div>
             <img src="imagens-telaincial/gears5.jpg" />
             <div class="i_text">Gears of War 5</div>
-          </div>
-    
-    
-          <a class="voltar" onclick="plus_fotos(-1)"> &#10094 </a>
-          <a class="proximo" onclick="plus_fotos(1)"> &#10095 </a>
+        </div>
 
-          <div class="dots_box">
+
+        <a class="voltar" onclick="plus_fotos(-1)"> &#10094 </a>
+        <a class="proximo" onclick="plus_fotos(1)"> &#10095 </a>
+
+        <div class="dots_box">
             <span class="ponto" onclick="current_fotos(1)"></span>
             <span class="ponto" onclick="current_fotos(2)"></span>
             <span class="ponto" onclick="current_fotos(3)"></span>
             <span class="ponto" onclick="current_fotos(4)"></span>
         </div>
-        
-      
+
+
         <input type="button" value="COMPRE JÁ" class="botao-pré-encomenda" />
     </div>
 
     <div class="div-botoes">
         <div class="container-headset">
-            <input
-                type="image"
-                src="icones/headset icon/icons8-headset-96.png"
-                class="headset"
-                alt="Headset Icon"
-                onclick="acessorios()"
-            />
+            <input type="image" src="icones/headset icon/icons8-headset-96.png" class="headset" alt="Headset Icon"
+                onclick="acessorios()" />
             <br />
             <label>ACESSÓRIOS</label>
         </div>
         <div class="container-play">
-            <input
-                type="image"
-                src="icones/play icon/icons8-reproduzir-100.png"
-                class="play"
-                alt="Play Icon"
-                onclick="jogar()"
-            />
+            <input type="image" src="icones/play icon/icons8-reproduzir-100.png" class="play" alt="Play Icon"
+                onclick="jogar()" />
             <br />
             <label>JOGAR</label>
         </div>
         <div class="container-usuario">
-            <input
-                type="image"
-                src="icones/user icon/icons8-usuário-de-gênero-neutro-96.png"
-                class="user"
-                alt="User Icon"
-                onclick="cadastro()"
-            />
+            <input type="image" src="icones/user icon/icons8-usuário-de-gênero-neutro-96.png" class="user"
+                alt="User Icon" onclick="cadastro()" />
             <br />
             <label>CADASTRO</label>
         </div>
         <div class="container-logout">
-            <input
-                type="image"
-                src="icones/logout icon/logout.png"
-                class="logout"
-                alt="Logout Icon"
-                onclick="logout()"
-            />
+            <input type="image" src="icones/logout icon/logout.png" class="logout" alt="Logout Icon"
+                onclick="logout()" />
             <br />
             <label>LOGOUT</label>
         </div>
@@ -115,4 +97,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>

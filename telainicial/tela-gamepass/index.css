@@ -13,7 +13,7 @@ body {
 
 /* Menu de navegação */
 .menu-pagina-inicial {
-  font-size: 4.0rem; /* Aumente este valor para aumentar o tamanho, por exemplo 2rem é 32px */
+  font-size: 4rem; /* Aumente este valor para aumentar o tamanho, por exemplo 2rem é 32px */
   cursor: pointer;
   position: absolute;
   right: 20px;
@@ -23,16 +23,15 @@ body {
   z-index: 10; /* Certificar que está acima do carrossel */
 }
 
-
 /* Estilos para a barra de navegação */
 .nav-pagina-inicial {
   display: none;
   flex-direction: column;
   gap: 10px;
-  background-color: #008000 ;
+  background-color: #008000;
   border-radius: 10px;
   padding: 10px;
-  border-style:solid;
+  border-style: solid;
   border-color: red;
   position: absolute; /* Posicionamento absoluto */
   top: 70px; /* Ajuste conforme necessário */
@@ -42,6 +41,7 @@ body {
 
 .nav-pagina-inicial.show {
   display: flex;
+  font-weight: bold;
 }
 
 /* Estilos para a lista de navegação */
@@ -87,11 +87,14 @@ body {
   position: relative; /* Garantir que o posicionamento seja relativo */
 }
 
+
+
 header {
   display: flex;
   flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte, se necessário */
   justify-content: space-around; /* Distribui os itens igualmente */
   align-items: center; /* Alinha verticalmente os itens */
+  font-weight: bold;
 }
 
 header div {
@@ -115,7 +118,7 @@ header label {
 .container-xbox {
   width: 100px;
   height: 130px;
-  top:10px;
+  top: 10px;
 }
 
 .container-xbox img {
@@ -125,7 +128,7 @@ header label {
 
 .container-xbox p {
   margin-top: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.5rem;
 }
 
@@ -360,17 +363,17 @@ footer {
   .div-header {
     position: relative; /* Certificar que o contêiner está posicionado */
   }
-  
+
   .div-voltar {
     position: absolute; /* Garante que o top seja aplicado */
     width: 70px; /* Tamanho desejado */
     height: 70px; /* Tamanho desejado */
     margin-right: -100px; /* Ajuste a margem direita conforme necessário */
-    top:10px;
+    top: 10px;
   }
 
-  .div-caixa-texto{
-    width:10px;
+  .div-caixa-texto {
+    width: 10px;
     height: 10px;
   }
 }
@@ -385,17 +388,17 @@ footer {
   .div-header {
     position: relative; /* Certificar que o contêiner está posicionado */
   }
-  
+
   .div-voltar {
     position: absolute; /* Garante que o top seja aplicado */
     width: 70px; /* Tamanho desejado */
     height: 70px; /* Tamanho desejado */
     margin-right: -100px; /* Ajuste a margem direita conforme necessário */
-    top:10px;
+    top: 10px;
   }
 
-  .div-caixa-texto{
-    width:10px;
+  .div-caixa-texto {
+    width: 10px;
     height: 10px;
   }
 }

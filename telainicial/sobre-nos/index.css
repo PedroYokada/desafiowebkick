@@ -11,7 +11,6 @@ body {
   padding: 10px;
 }
 
-
 .div-header h1,
 header h1 {
   color: black;
@@ -146,10 +145,10 @@ main.linha {
 }
 
 .divfooter {
-  font: 16px "Segoe UI";
+  font: 18px "Segoe UI";
   height: auto;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: white;
   background-color: #38b000;
   margin-top: 20px;
   padding: 10px;
@@ -159,7 +158,7 @@ main.linha {
   bottom: 0;
   left: 0;
   right: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 /* Estilo base */

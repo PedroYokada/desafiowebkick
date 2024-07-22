@@ -9,6 +9,7 @@ body {
   height: 100px;
 }
 
+
 .header-pagina {
   background-color: #4c4c4c;
   display: flex;
@@ -22,11 +23,17 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.div-menu label,
+li {
+  font-weight: bold;
+}
+
 .header-pagina p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.875rem; /* 30px */
   color: white;
   margin: 0 20px;
+  font-weight: bold;
 }
 
 .header-pagina .menu-pagina-inicial {
@@ -40,6 +47,7 @@ body {
 .header-pagina .nav-pagina-inicial {
   display: flex;
   align-items: center;
+  border-radius: 10px;
 }
 
 .header-pagina nav {
@@ -99,7 +107,6 @@ body {
 .nav-pagina-inicial nav {
   flex-direction: column;
   width: 100%;
-  
 }
 
 .nav-pagina-inicial nav li {
@@ -228,6 +235,7 @@ body {
   border-color: #4c4c4c;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 .botao-pré-encomenda:hover {
@@ -287,7 +295,6 @@ body {
 
 /* Responsividade */
 @media (max-width: 768px) {
-
   .header-pagina {
     width: 43.8rem; /* 400px */
     height: 6.25rem; /* 100px */
@@ -309,7 +316,6 @@ body {
     height: 3.75rem; /* 60px */
     width: 3.75rem; /* 60px */
   }
-
 
   .botao-pré-encomenda {
     font-size: 1rem; /* 16px */

@@ -1,69 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="login.js" defer></script>
-    <title>XBOX</title>
-  </head>
 
-  <body>
-    <div class="divprincipal">
-      <header class="faixaprincipal">
-        <img src="icons8-xbox.svg" class="xbox" />
-        <h1>XBOX - POWER YOUR DREAMS</h1>
-      </header>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <script src="login.js" defer></script>
+  <title>XBOX</title>
+</head>
 
-    <br />
+<body>
+  <div class="divprincipal">
+    <header class="faixaprincipal">
+      <img src="icons8-xbox.svg" class="xbox" />
+      <h1>XBOX - POWER YOUR DREAMS</h1>
+    </header>
+  </div>
 
-    <div class="divtitulologin">
-      <h1>TELA DE LOGIN</h1>
-    </div>
-    <br />
+  <br />
 
-    <div class="div-formulario">
-      <form style="outline: none" id="formulario">
-        <div class="container-formulario">
-          <label class="label-formulario">NOME/EMAIL</label>
-          <input
-            type="text"
-            class="caixatexto"
-            id="nome"
-            name="nome"
-            required
-         
-          />
-        </div>
-        <div class="container-formulario">
-          <label class="label-formulario">SENHA</label>
-          <input
-            type="password"
-            class="caixatexto"
-            id="sobrenome"
-            name="sobrenome"
-            required
-          
-          />
-        </div>
+  <div class="divtitulologin">
+    <h1>TELA DE LOGIN</h1>
+  </div>
+  <br />
 
-        <div class="container-formulario">
-          <button type="button" class="formulario" onclick="logar()">
-            LOGAR
-          </button>
-        </div>
-      </form>
-    </div>
+  <div class="div-formulario">
+    <form style="outline: none" id="formulario">
+      <div class="container-formulario">
+        <label class="label-formulario">NOME/EMAIL</label>
+        <input type="text" class="caixatexto" id="nome" name="nome" required />
+      </div>
+      <div class="container-formulario">
+        <label class="label-formulario">SENHA</label>
+        <input type="password" class="caixatexto" id="sobrenome" name="sobrenome" required />
+      </div>
 
-    <div class="divfooter">
-      <footer>
-        © [2024] Todos os direitos reservados. Xbox é uma marca registrada da
-        Microsoft Corporation. Este site não é afiliado, endossado ou
-        patrocinado pela Microsoft Corporation. Todos os logotipos e marcas
-        registradas pertencem aos seus respectivos proprietários. Desenvolvido
-        por Pedro Yokada – Turma L - Kick.
-      </footer>
-    </div>
-  </body>
+      <div class="container-formulario">
+        <button type="button" class="formulario" onclick="logar()">
+          LOGAR
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="divfooter">
+    <footer>
+      © [2024] Todos os direitos reservados. Xbox é uma marca registrada da
+      Microsoft Corporation. Este site não é afiliado, endossado ou
+      patrocinado pela Microsoft Corporation. Todos os logotipos e marcas
+      registradas pertencem aos seus respectivos proprietários. Desenvolvido
+      por Pedro Yokada – Turma L - Kick.
+    </footer>
+  </div>
+</body>
+
 </html>

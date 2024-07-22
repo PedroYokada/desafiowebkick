@@ -36,7 +36,6 @@ $(document).ready(function () {
   $("#cep").mask("00000-000");
 });
 
-
 function validacaoEmail() {
   var email = document.querySelector("#email").value;
   var error = document.querySelector("#erro-email");
@@ -44,9 +43,9 @@ function validacaoEmail() {
   var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
   if (!regex.test(email)) {
-      error.innerHTML = "E-mail inválido";
+    error.innerHTML = "E-mail inválido";
   } else {
-      error.innerHTML = "";
+    error.innerHTML = "";
   }
 }
 
@@ -54,7 +53,7 @@ jQuery("#telefone")
   .mask("(99) 9999-9999?9")
   .focusout(function (event) {
     var target = event.currentTarget || event.srcElement;
-    var phone = target.value.replace(/\D/g, '');
+    var phone = target.value.replace(/\D/g, "");
     var element = jQuery(target);
     element.unmask();
 
@@ -65,8 +64,7 @@ jQuery("#telefone")
     }
   });
 
-  function voltar() {
-    console.log("Redirecionando para a página de acessórios...");
-    window.location.href = "../../telainicial/index.html"; 
-  }
-  
+function voltar() {
+  console.log("Redirecionando para a página de acessórios...");
+  window.location.href = "../../telainicial/index.html";
+}
