@@ -13,6 +13,10 @@ body {
   font-weight: bold;
 }
 
+.div-header{
+  height: 200px;
+}
+
 .divfooter {
   color: white;
   font-size: 18px;
