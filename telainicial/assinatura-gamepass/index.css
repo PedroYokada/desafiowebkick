@@ -223,6 +223,7 @@ header h1 {
   padding: 10px;
   border-radius: 5px;
   width: 100%;
+  font-weight: bold;
 }
 
 .div-assinar input:hover,

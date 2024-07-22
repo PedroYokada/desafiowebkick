@@ -13,7 +13,7 @@ body {
 
 /* Menu de navegação */
 .menu-pagina-inicial {
-  font-size: 1.5rem; /* 24px */
+  font-size: 4.0rem; /* Aumente este valor para aumentar o tamanho, por exemplo 2rem é 32px */
   cursor: pointer;
   position: absolute;
   right: 20px;
@@ -22,6 +22,7 @@ body {
   margin-right: 10px; /* Ajuste a margem direita conforme necessário */
   z-index: 10; /* Certificar que está acima do carrossel */
 }
+
 
 /* Estilos para a barra de navegação */
 .nav-pagina-inicial {
@@ -319,6 +320,7 @@ header label {
   text-align: center;
   border-radius: 10px;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 footer {

@@ -99,6 +99,7 @@ body {
 .nav-pagina-inicial nav {
   flex-direction: column;
   width: 100%;
+  
 }
 
 .nav-pagina-inicial nav li {
