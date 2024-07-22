@@ -4,7 +4,14 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.div-header,
+.div-header{
+  background-color: #38b000;
+  border-radius: 10px;
+  padding: 10px;
+  height: 200px;
+}
+
+
 .divfooter {
   background-color: #38b000;
   border-radius: 10px;
@@ -20,7 +27,7 @@ header h1 {
 
 .div-titulo h3 {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 10%;
   font-size: 40px;
   color: rgb(255, 255, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -202,6 +209,9 @@ main.linha {
   .caixa {
     width: calc(100% - 20px);
   }
+  .div-titulo{
+    margin-top: 20%;
+  }
 }
 
 /* Para tablets */
@@ -209,11 +219,17 @@ main.linha {
   .caixa {
     width: calc(50% - 40px);
   }
+  .div-titulo{
+    margin-top: 20%;
+  }
 }
 
 /* Para desktops e telas maiores */
 @media (min-width: 1025px) {
   .caixa {
     width: calc(33.333% - 40px);
+  }
+  .div-titulo{
+    margin-top: 20%;
   }
 }
